@@ -10,9 +10,24 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>{title}</title>
     <meta name="description" content={description} />
-	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Streamwake" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://streamwake.com/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
   </head>
 
   <body>
@@ -28,10 +43,14 @@ const description =
             A small digital studio building practical software, tools, and systems.
           </p>
 
-          <p class="meta">Early stage. Select projects in development.</p>
+          <p class="meta">
+            Early stage. Select projects in development.
+          </p>
 
           <p class="contact">
-            <a class="link" href="mailto:hello@streamwake.com">hello@streamwake.com</a>
+            <a class="link" href="mailto:hello@streamwake.com">
+              hello@streamwake.com
+            </a>
           </p>
         </div>
       </section>
